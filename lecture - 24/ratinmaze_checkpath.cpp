@@ -4,6 +4,11 @@ using namespace std;
 // int cnt = 0;
 bool f(char maze [][10], int m, int n, int i , int j){
 
+if(maze[i][j]=='x'){
+
+    return false;
+}
+
 
 if(i == m || j == n){
     return false;
@@ -11,10 +16,10 @@ if(i == m || j == n){
 
 
 
-if(maze[i][j]=='x'){
+// if(maze[i][j]=='x'){
 
-    return false;
-}
+//     return false;
+// }
 
 if (i == m- 1 and j == n- 1){
     // cnt++;

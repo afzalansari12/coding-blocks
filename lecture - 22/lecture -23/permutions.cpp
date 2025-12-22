@@ -1,22 +1,22 @@
 
 
 #include<iostream>
-#include<
+
 using  namespace std;
 
-void f(char inp[], int i){
+void f(char inp[],int n ,int i ){
 
-    if (inp[]== '\0'){
-
+    if(i == n){
         cout << inp << endl;
         return;
     }
 
-    int (int j = i;j < n;j++){
+    for(int j =i; j <= n-1; j++){
 
         swap(inp[i],inp[j]);
         f(inp, n, i+1);
-        swap(inp[i],inp[j]);  //backtracking
+        swap(inp[i],inp[j]); // backtracking
+        
     }
 
 }
@@ -26,8 +26,8 @@ int main(){
     char inp[]= "abc";
     int n = strlen(inp);
 
-    f(inp,n,0);
+    f(inp, n, 0 ) ;
 
-    return ;
+    return 0;
 
 }
