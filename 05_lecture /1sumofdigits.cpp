@@ -16,15 +16,7 @@ int main() {
         sum = sum + d;
 
         n = n / 10;
-
-
-
     }
-
-
       cout << sum << endl;
        return 0;
-
-
-
 }
