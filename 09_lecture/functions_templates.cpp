@@ -10,16 +10,5 @@ int main (){
 
     std::cout << max<int>(2 , 3) << std::endl;
     std::cout << max<double>(1.732,1.414) << std:: endl;
-
-
-
-
-
-
-
-
-
-
-
-    return 0;
+return 0;
 }

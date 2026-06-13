@@ -41,9 +41,9 @@ float computesqr_root(int n ,int p){
 int main(){
     int n ;
     cin >> n ;
-    cin >> p;
+    // cin >> p;
     
-    cout << computesqr_root(n,p ) << endl;
+    // cout << computesqr_root(n,p ) << endl;
  
     return 0;   
 }

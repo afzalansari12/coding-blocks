@@ -19,15 +19,14 @@ int main()
     while (ans*ans <= n  ){
 
         ans = ans + 0.01; 
-        
-       
-        } ans = ans - 0.01;
+ } ans = ans - 0.01;
 
-        while (ans* ans <= n){
+ while (ans* ans <= n){
             ans = ans + 0.001;
         }
 
          ans = ans - 0.001;
+        //  cout << setprecision(2) << fixed << ans << endl;
 
          cout << ans << endl;
 

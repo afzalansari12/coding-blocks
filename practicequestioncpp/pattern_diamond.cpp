@@ -1,4 +1,5 @@
 // #include<iostream>
+
 // using namespace std;
 // int main(){
 //     int n= 9;
@@ -24,10 +25,10 @@
 //             cout << "*";
 //         }  
 
-//         cout << endl;
+ //         cout << endl;
 //     }
 // return 0;
-// }
+//   }
 
 
 
@@ -78,5 +79,30 @@ int main(){
      for(int i = 1; i <= n; i++){
         cout << "*";
        }
+      
 return 0;
 }
+// #include<iostream>
+// using namespace std;
+// int main(){
+// //    int n = 7;
+// //    int ans= 0;
+// //    for(int i = 1; i <= n ; i++){
+// //     int x ;
+// //     cin >> x;
+// //     ans = ans^x;
+// //    }
+// // cout << ans;
+// cout << (1<<4) << endl;
+// return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n = 42;
+//     int k = 4;
+//     int x = (1<<k);
+//     cout << (n ^ x);
+// return 0;
+// }

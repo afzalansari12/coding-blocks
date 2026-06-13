@@ -15,7 +15,6 @@ int main() {
     for( int i = 0; i < n; i++){
 
         if ( arr[i] > fl){
-
             tl = sl;
             sl = fl;
             fl = arr[i];

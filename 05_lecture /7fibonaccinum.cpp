@@ -14,19 +14,19 @@ int main(){
         int a = 0;
         int b = 1;
 
-        int i =2;
+        int i = 2;
 
 
 
         while ( i <= n){
 
             int c = a + b;
-            a =b;
-            b =c;
+            a = b;
+            b = c;
             i = i + 1;
         }
            
-        cout << b << endl;
+        cout << c << endl;
     }
     
        return 0;

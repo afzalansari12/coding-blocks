@@ -12,8 +12,8 @@ int kadanes(int arr[], int n) {
 	int maxSoFar = x[0];
 
 	for (int i = 1; i <= n - 1; i++) {
-		x[i] = max(x[i - 1] + arr[i], arr[i]); // const
-		maxSoFar = max(maxSoFar, x[i]); // const
+		x[i] = max(x[i - 1] + arr[i], arr[i]);
+		maxSoFar = max(maxSoFar, x[i]); 
 	}
 
 	return maxSoFar;
@@ -28,12 +28,12 @@ int kadanesSpaceOptimised(int arr[], int n) {
 
 	int x;
 
-	x = arr[0]; // x represents x[0]
+	x = arr[0];
 	int maxSoFar = x;
 
 	for (int i = 1; i <= n - 1; i++) {
-		x = max(x + arr[i], arr[i]); // const
-		maxSoFar = max(maxSoFar, x); // const
+		x = max(x + arr[i], arr[i]); 
+		maxSoFar = max(maxSoFar, x); 
 	}
 
 	return maxSoFar;

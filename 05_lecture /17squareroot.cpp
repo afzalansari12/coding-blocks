@@ -8,25 +8,15 @@ int main(){
     cin >> n;
     int ans = 0;
 
-    while ( ans*ans <=n){
+    while ( ans*ans <= n){
+           ans = ans +1;
 
-
-           ans = ans +1 
-           ;
-
-
-
-
-    } ans = ans - 1;
+    } 
+    ans = ans - 1;
       
       cout << ans << endl;
 
 
       return 0;
-
-
-
-
-
 
 }

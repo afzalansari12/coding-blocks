@@ -1,11 +1,12 @@
 #include<iostream>
+#include<queue>
 #include<vector>
 using namespace std;
 int main(){
     int n , e;
     int a;
     int b;
-      cout <<"enter no. vertices";
+    cout << "enter no. vertices";
     cin >> n;
       cout << " enter the no. of edges ";
     cin >> e;
@@ -33,12 +34,12 @@ int main(){
         cout << endl;
         }
 
-        cout << "BFS order is :" << endl;
+        // cout << "BFS order is :" << endl;
 
         queue<int> q;
-        vector<int> status(n,0);
-        q.push(0);
-        status[0] = 1;
+        vector<int> status(n,-1);
+           q.push(3);
+           status[3] = 0;
 
         while(!q.empty()){
 
@@ -46,19 +47,22 @@ int main(){
             
              q.pop();
 
-            cout <<"x"<< ",";
+            //cout << x << ",";
 
+         for(int j = 0; j < adjlist[x].size(); j++){
+                   int y = adjlist[x][j];
+                   if(status[y] == -1){
+                    status[y] = status[x] +1;
+                     q.push(y);
+                   }
 
-            for(int j =0 ; j < adjlist[x].size();j++){
-                if(status[j]== 0){
-                       q.push(j);
-                       status[j] == 1;
-                }
+         }
+            
+ }
 
-
-           
-            }
-        }
+ for(int i = 0 ; i< n ; i++){
+     cout << status[i] << endl;
+ }
 
 
      

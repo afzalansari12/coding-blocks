@@ -25,7 +25,3 @@ int main(){
 
 
 #include<stdio.h>
-
-int main(){
-    int n 
-}

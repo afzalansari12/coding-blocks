@@ -11,12 +11,13 @@ int main() {
 
 	while (true) {
 
+
 		ch = cin.get();
+
 		if (ch == '\n') {
 			break;
 		}
-
-		if (ch == 'N') {
+        if (ch == 'N') {
 			y++;
 		} else if (ch == 'S') {
 			y--;
@@ -27,24 +28,17 @@ int main() {
 			x--;
 		}
 
-	}
-
 	
 
+	}
+   cout << '(' << x << ',' << y << ')';
 	if (x > 0) {
-
-		
-
 		for (int i = 1; i <= x; i++) {
 			cout << 'E';
 		}
-
 	}
 
 	if (y > 0) {
-
-		
-
 
 		for (int i = 1; i <= y; i++) {
 			cout << 'N';
@@ -53,10 +47,6 @@ int main() {
 	}
 
 	if (y < 0) {
-
-		
-
-
 		for (int i = 1; i <= abs(y); i++) {
 			cout << 'S';
 		}
@@ -64,9 +54,6 @@ int main() {
 	}
 
 	if (x < 0) {
-
-		
-
 		for (int i = 1; i <= abs(x); i++) {
 			cout << 'W';
 		}

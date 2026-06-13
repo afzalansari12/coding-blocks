@@ -34,7 +34,9 @@
 //     cout << endl;
 
 //     return 0;
-// }int main() {
+// }
+
+// int main() {
     
     
     
@@ -95,21 +97,78 @@
 
 //     return 0;
 // }
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5; // Number of rows
+//     for (int i = 1; i <= n; i++) {
+//         // Print numbers
+//         for (int j = 1; j <= n - i + 1; j++) {
+//             cout << j << " ";
+//         }
+//         // Print asterisks
+//         for (int k = 1; k <= i; k++) {
+//             cout << "* ";
+//         }
+//         cout << endl; // Move to the next line
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// void selectionsort(int arr[], int n){
+//     for(int i = 0; i <= n-2; i++){
+//         int minIdx = i;
+//         for(int j = i + 1; j <= n -1; j++){ 
+//             if(arr[j] < arr[minIdx]){
+//                 minIdx = j;
+//             }
+//         swap(arr[minIdx], arr[j]);
+
+//         }
+//     }
+// }
+// int main(){
+//     int arr[] = { 10 , 0, 40, 70, 60,};
+//     int n = sizeof(arr)/sizeof(int);
+//     selectionsort(arr, n);
+//     for(int i = 0; i < n ; i++){
+//         cout << arr[i] << " ";
+//     }
+// return 0;
+// }
+
+#include<iostream>
 using namespace std;
 
-int main() {
-    int n = 5; // Number of rows
-    for (int i = 1; i <= n; i++) {
-        // Print numbers
-        for (int j = 1; j <= n - i + 1; j++) {
-            cout << j << " ";
+void insertionsort(int arr[], int n){
+
+        for(int i =1; i <= n-1; i++){
+
+        int key = arr[i];
+
+        int j= i -1;
+
+        while( j>=0 and key < arr[j]){
+            arr[ j+ 1] = arr[j];
+            j--;
         }
-        // Print asterisks
-        for (int k = 1; k <= i; k++) {
-            cout << "* ";
-        }
-        cout << endl; // Move to the next line
+
+        arr[ j+ 1] = key;
     }
-    return 0;
+    
+ }
+
+int main(){
+
+    int arr[] = {30 , 40 , 50, 20, 10};
+    int n = sizeof(arr)/ sizeof(int);
+    insertionsort(arr, n);
+
+    for(int i = 0; i <  n ; i++){
+        cout << arr[i] << " ";
+    }
+return 0;
 }
