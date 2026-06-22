@@ -6,8 +6,7 @@ int main(){
 
   cout << arr[0] << " " << arr[0][0] <<  arr + 1 << endl;
 
-
-
-
+  cout << *(*(arr + 1)); 
+  cout << " " << *(arr[1]);
     return 0;
 }
