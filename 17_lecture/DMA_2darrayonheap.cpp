@@ -33,7 +33,7 @@ int main(){
          }
     }
 
-    delete
+    delete[]ptr;
     return 0;
 
 }

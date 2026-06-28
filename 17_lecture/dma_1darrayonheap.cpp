@@ -1,8 +1,8 @@
-#include<ostream>
+#include <iostream>
 using namespace std;
 int main(){
     int n ;
-    ci >> n;
+    cin >> n;
 
     int* ptr = new int[n];
 
@@ -11,11 +11,16 @@ int main(){
         cin >> ptr[i];
 
     }
+
     for (int i = 0; i < n; i++){
         cout << ptr[i] << " ";
 
     }
+
     cout << endl;
 
-    delete ptr
+    delete ptr;
+ 
+  return 0;
+
 }

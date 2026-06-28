@@ -8,7 +8,7 @@ int main(){
     *ptr = 50;
 
     cout << *ptr << endl;
-   delete* 'iptr';
+   delete  ptr;
     char* chptr = new char;
     *chptr = 'B';
 
