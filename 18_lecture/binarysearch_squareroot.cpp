@@ -33,17 +33,16 @@ float computesqr_root(int n ,int p){
 	return sqr;
 }
 
-    
-
-
 
 
 int main(){
-    int n ;
+    int n,p ;
     cin >> n ;
-    // cin >> p;
+    cin >> p;
     
-    // cout << computesqr_root(n,p ) << endl;
+    cout << computesqr_root(n,p ) << endl;
  
     return 0;   
 }
+
+
