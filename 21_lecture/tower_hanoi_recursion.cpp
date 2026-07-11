@@ -1,7 +1,5 @@
 #include<iostream>
 using namespace std;
-
-
 int f(int n, char src, char dst,char hlp)
 
 {
