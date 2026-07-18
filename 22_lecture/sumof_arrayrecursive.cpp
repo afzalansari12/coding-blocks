@@ -5,11 +5,11 @@ using namespace std;
 int f(int x[],int n, int i){
 
     if (i == n-1){
-
-        return x[ n-1];
+       return x[ n-1];
     }
 
     int A = f(x,n,i+1);
+
     return x[i]+A;
 }
 

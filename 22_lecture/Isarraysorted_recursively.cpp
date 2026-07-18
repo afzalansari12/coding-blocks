@@ -14,15 +14,13 @@ return x[i] < x[i+1] and f(x,n,i+1);
 }
 
 
-
-
-
 int main(){
-    x[] = {10,20,40,50};
+    int x[] = {10,20,40,50};
     int n = sizeof(x)/sizeof(int); 
 
   f(x,n,0) ? cout << "x[] is sorted "  << endl: cout << "x[] is not sorted" << endl ;
-
-
     return 0;
 }
+
+// time complexity o(n);
+// space complexity o(n);
