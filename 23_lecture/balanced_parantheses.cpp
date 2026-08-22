@@ -5,7 +5,7 @@ using namespace std;
 void f(int n, char out[], int i , int oc, int cc){
 if(i == 2*n){
     out[i] = '\0';
-    cout << out << endl;
+    cout << out <<  endl;
     return;
 }
 
@@ -23,8 +23,6 @@ if(cc < oc ){
 
 
 }
-
-
 
 int main(){
      int n = 2;

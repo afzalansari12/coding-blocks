@@ -1,5 +1,3 @@
-
-
 #include<iostream>
 
 using  namespace std;
@@ -24,6 +22,7 @@ void f(char inp[],int n ,int i ){
 int main(){
 
     char inp[]= "abc";
+
     int n = strlen(inp);
 
     f(inp, n, 0 ) ;
